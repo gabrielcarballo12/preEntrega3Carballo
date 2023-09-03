@@ -11,12 +11,12 @@ let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 listaJuegos.forEach((juego) => {
 
   let contenido = document.createElement("div");
-  contenido.className = "card"
+  contenido.className = "card1"
   contenido.innerHTML = `
   
-  <img src="${juego.img}">
-  <h3>${juego.nombre}
-  <p class = <"price">${juego.precio} $<p>
+  <img class="img-fluid" src="${juego.img}">
+  <h3>${juego.nombre}</h3>
+  <p class = "price">${juego.precio} $<p>
   
   `;
   gameContent.append(contenido);
@@ -26,7 +26,18 @@ comprar.innerText = "Comprar"
 comprar.className = "comprar"
 contenido.append(comprar);
 
+
+
 comprar.addEventListener("click", () => {
+
+Swal.fire({
+  position: 'top-end',
+  icon: 'success',
+  title: 'Agregado al carrito!',
+  showConfirmButton: false,
+  timer: 1500
+})
+
 
 const repeat = carrito.some((repeatJuego) => repeatJuego.id === juego.id);
 
@@ -61,6 +72,7 @@ const saveLocal = () => {
   localStorage.setItem("carrito", JSON.stringify (carrito));
 
 };
+
 
 
 
