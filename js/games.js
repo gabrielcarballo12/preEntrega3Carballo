@@ -2,11 +2,11 @@ const listaJuegos = [
     { 
       id:1,
 
-      nombre: "The Legend of Zelda: Breath of the Wild",
+      nombre: "God Of War: Ragnarok",
 
       precio: 30000,
 
-      img: "https://d2r9epyceweg5n.cloudfront.net/stores/001/288/886/products/imagen_2023-03-20_1938029151-6b67f805d613d5d6f016793520006098-480-0.png",
+      img: "https://d2r9epyceweg5n.cloudfront.net/stores/987/907/products/ps4_gowr_ste_pksht_lt_la_rgb_2205251-10d515ce532d05fcfa16579161088901-1024-1024.png",
 
       cantidad: 1,
     },
@@ -19,7 +19,7 @@ const listaJuegos = [
       
       precio: 30000,
     
-      img: "https://http2.mlstatic.com/D_NQ_NP_716146-MLA40198035450_122019-O.webp",
+      img: "https://www.nemesisec.gg/wp-content/uploads/2021/09/rdr2.png.webp",
 
       cantidad: 1,
     
@@ -79,3 +79,5 @@ const listaJuegos = [
    
 
   ];
+  
+  //https://http2.mlstatic.com/D_NQ_NP_716146-MLA40198035450_122019-O.webp
